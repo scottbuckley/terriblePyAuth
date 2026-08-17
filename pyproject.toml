@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "excellent-pyauth"
+version = "0.2.0"
+description = "Flask and SQLite web authentication"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["Flask>=3.0,<4"]
+license = "MIT"
+authors = [
+  { name = "pyAuth contributors" }
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Education",
+  "Programming Language :: Python :: 3",
+]
+
+[tool.setuptools]
+packages = ["pyauth"]
