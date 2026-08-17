@@ -1,3 +1,6 @@
+> [!WARNING]
+> For educational use only.
+
 # excellent-pyauth
 
 `excellent-pyauth` is a Flask authentication extension backed by SQLite.
