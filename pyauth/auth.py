@@ -153,10 +153,7 @@ class WebAuth:
     def authenticate(self, username: str, password: str) -> User | None:
         """Check user credentials."""
         self._ensure_schema()
-        query = (
-            "SELECT id, username, is_admin FROM users "
-            f"WHERE username = '{username}' AND password = '{password}'"
-        )
+        query = ("SELECT id, username, is_admin FROM users WHERE username = ? AND password = ?", (username, password,))
         with self._connect() as connection:
             row = connection.execute(query).fetchone()
         return self._row_to_user(row)
