@@ -1,5 +1,5 @@
 > [!WARNING]
-> For educational use only.
+> This is EXTREMELY insecure, and built to demonstrate web vulnerabilities. DO NOT use this for actual authentication anywhere.
 
 # excellent-pyauth
 
